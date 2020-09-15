@@ -36,10 +36,12 @@ The following links are public dataset, we have to select, pool, organize, and p
 - https://github.com/balajisrinivas/Face-Mask-Detection/tree/master/dataset 
 
 
-<p style="text-align:right">This is some text in a paragraph.</p>
+<p style="center">
+    <h5>This a test</h5>
+</p>
 
 <p align="center">
-  <img width="460" height="300" src="http://www.fillmurray.com/460/300">
+    <img width="460" height="300" src="http://www.fillmurray.com/460/300">
 </p>
 
  
