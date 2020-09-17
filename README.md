@@ -36,9 +36,7 @@ The following links are public dataset, we have to select, pool, organize, and p
 - https://github.com/balajisrinivas/Face-Mask-Detection/tree/master/dataset 
 
 
-<p style="center">
-    <h5>This a test</h5>
-</p>
+
 
 <p align="center">
     <img width="460" height="300" src="http://www.fillmurray.com/460/300">
