@@ -1,11 +1,5 @@
 from Face_Detector import *
-
-classes = ['without_mask', 'with_mask', 'mask_weared_incorrect']
-classes_color = {'without_mask' : (0, 0, 255),
-				 'with_mask' : (0, 255, 0),
-				 'mask_weared_incorrect' : (0, 128, 255)}
-
-vid = cv2.VideoCapture(0)
+from Mask_Detector import *
 
 def draw_face(frame, bndbox, predict):
 	bndbox = np.array(bndbox)
@@ -28,17 +22,25 @@ def draw_face(frame, bndbox, predict):
 
 	return frame
 
+if __name__ == "__main__":
 
-while (True):
+	classes = ['without_mask', 'with_mask', 'mask_weared_incorrect']
+	classes_color = {'without_mask': (0, 0, 255),
+					 'with_mask': (0, 255, 0),
+					 'mask_weared_incorrect': (0, 128, 255)}
 
-	ret, frame = vid.read()
-	bndbox = face_detect(frame)
-	predict = [1, 0, 0]
-	frame = draw_face(frame, bndbox, predict)
-	cv2.imshow('frame', frame)
+	vid = cv2.VideoCapture(0)
 
-	if cv2.waitKey(1) & 0xFF == ord('q'):
-		break
+	while (True):
 
-vid.release()
-cv2.destroyAllWindows()
+		ret, frame = vid.read()
+		bndbox = face_detect(frame)
+		predict = mask_detect(frame, bndbox)
+		frame = draw_face(frame, bndbox, predict)
+		cv2.imshow('frame', frame)
+
+		if cv2.waitKey(1) & 0xFF == ord('q'):
+			break
+
+	vid.release()
+	cv2.destroyAllWindows()
