@@ -5,6 +5,7 @@ import numpy as np
 import cv2
 
 def mask_detect(frame, bndbox):
+
     bndbox = np.array(bndbox)
 
     if bndbox.shape == (1, 4):
