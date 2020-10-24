@@ -4,13 +4,16 @@ from tensorflow.keras.models import load_model
 import numpy as np
 import cv2
 
+predict = []
+
+maskDetectionModelPath = r".\Mask_Detect\mask_detector.model"
+maskNet = load_model(maskDetectionModelPath)
 def mask_detect(frame, bndbox):
 
     bndbox = np.array(bndbox)
 
+    predict = [0,0,1]
     if bndbox.shape == (1, 4):
-        maskDetectionModelPath = r".\Mask_Detect\mask_detector.model"
-        maskNet = load_model(maskDetectionModelPath)
 
         startX, startY, endX, endY = bndbox[0][0], bndbox[0][1], bndbox[0][2], bndbox[0][3]
 
@@ -19,7 +22,8 @@ def mask_detect(frame, bndbox):
         face = cv2.resize(face, (224, 224))
         face = img_to_array(face)
         face = preprocess_input(face)
-
+        face = np.array([face])
+        #print(face.shape)
         predict = maskNet.predict(face)
 
-	return predict
+    return [predict]

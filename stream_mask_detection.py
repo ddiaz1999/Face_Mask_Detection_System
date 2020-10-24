@@ -5,8 +5,12 @@ def draw_face(frame, bndbox, predict):
 	bndbox = np.array(bndbox)
 
 	if bndbox.shape == (1, 4):
-
-		class_predict = classes[predict.index(max(predict))]
+		predict = predict[0][0]
+		print(predict, type(predict))
+		index = np.where(predict == np.max(predict))[0][0]
+		print(index,predict[index])
+		class_predict = classes[index]
+		#print('class predict',class_predict, 'max', max(predict[0][0]))
 		color = classes_color[class_predict]
 
 		startX, startY, endX, endY = bndbox[0][0], bndbox[0][1], bndbox[0][2], bndbox[0][3]

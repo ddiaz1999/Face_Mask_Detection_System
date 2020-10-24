@@ -1,10 +1,10 @@
 import numpy as np
 import cv2
 
-def face_detect(frame):
+prototxtPath = r".\Face_Detect\deploy.prototxt"
+weightsPath = r".\Face_Detect\res10_300x300_ssd_iter_140000.caffemodel"
 
-	prototxtPath = r".\Face_Detect\deploy.prototxt"
-	weightsPath = r".\Face_Detect\res10_300x300_ssd_iter_140000.caffemodel"
+def face_detect(frame):
 
 	faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 
