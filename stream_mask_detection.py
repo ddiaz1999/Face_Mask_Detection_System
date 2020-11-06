@@ -28,10 +28,11 @@ def draw_face(frame, bndbox, predict):
 
 if __name__ == "__main__":
 
-	classes = ['without_mask', 'with_mask', 'mask_weared_incorrect']
-	classes_color = {'without_mask': (0, 0, 255),
-					 'with_mask': (0, 255, 0),
-					 'mask_weared_incorrect': (0, 128, 255)}
+	classes = ['mask_weared_incorrect', 'with_mask', 'without_mask']
+	classes_color = { 'mask_weared_incorrect': (0, 128, 255),
+		          'with_mask': (0, 255, 0), 
+			  'without_mask': (0, 0, 255)
+			 }
 
 	vid = cv2.VideoCapture(0)
 
