@@ -14,7 +14,7 @@ def mask_detect(frame, bndbox):
 
     predict = [0,0,1]
     if bndbox.shape == (1, 4):
-
+        #bndbox = bndbox[0]
         startX, startY, endX, endY = bndbox[0][0], bndbox[0][1], bndbox[0][2], bndbox[0][3]
 
         face = frame[startY:endY, startX:endX]
