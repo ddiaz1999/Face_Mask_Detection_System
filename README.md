@@ -3,11 +3,13 @@
 <h3>
     <strong> Problem description </strong>
 </h3>
-Design and implementate a system to detect and classify the wearing of mask in three classes: 
+<p>
+    Design and implement a system to detect and classify the wearing of mask in three classes:
+</p>
 <br>
 <p align="center">
-    <img width="460" height="300" src="https://drive.google.com/uc?id=1qv32VDRpnure0sSeLEDf5ugYZzYbu_y6">
-</p>
+    <img src="https://drive.google.com/uc?id=1qv32VDRpnure0sSeLEDf5ugYZzYbu_y6">
+</p> 
 <br>
 
 <h3>
@@ -35,14 +37,26 @@ Design and implementate a system to detect and classify the wearing of mask in t
 <br>
 
 <p align="center">
-    <img src="http://ForTheBadge.com/images/badges/made-with-python.svg" alt="License: Unlicense">
-    <br>
-    <img src="https://img.shields.io/badge/Trained in-Google Colab-magenta.svg" alt="License: Unlicense">
-    <img src="https://img.shields.io/badge/On device-GPU-green.svg" alt="License: Unlicense">
+    <img src="http://ForTheBadge.com/images/badges/made-with-python.svg"><br>
+    <img src="https://img.shields.io/badge/Trained in-Google Colab-magenta.svg">
+    <img src="https://img.shields.io/badge/On device-GPU-green.svg">
 </p>
 
+<h3>
+    <strong> Virtual environment </strong>
+</h3>
+<p>
+    We use <a href="https://colab.research.google.com/notebooks/welcome.ipynb?hl=es-419"><strong><i> Google Colab </i></strong></a> to train our model, we did it because <strong> Colab </strong> offers us GPU for free, in this way we can accelerate the model training.
+</p>
+<br>
 
-<h1><center>Another test!</center></h1>
+<h3>
+    <strong> Model solution </strong>
+</h3>
+<p>
+    Our base model is <a href="https://arxiv.org/pdf/1801.04381.pdf"><strong><i> MobileNetV2 </i></strong></a>, after we added layers. The following is out architure:
+</p>
 <p align="center">
-    <img width="460" height="300" src="http://www.fillmurray.com/460/300">
-</p>
+    <img src="https://drive.google.com/uc?id=1ALPJrPRSN2MAFT9lnYl6ta7IjrogfjI2">
+    <img src="https://drive.google.com/uc?id=1ynTxSdnK3veuN8KM9JviGho5br9_15VW">
+</p> <br>
