@@ -1,5 +1,10 @@
 # FACE MASK DETECTION SYSTEM
 
+<p align="center">
+    <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif">
+</p> 
+<br>
+
 <h3>
     <strong> Problem description </strong>
 </h3>
