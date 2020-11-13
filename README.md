@@ -8,6 +8,12 @@ Developep by:
 ---
 ---
 
+<a href="http://unlicense.org/">
+<img src="http://ForTheBadge.com/images/badges/made-with-python.svg" alt="License: Unlicense">
+</a>
+
+
+
 ### *Problem description*  
 
 Make a system to detect and classify the wearing of mask of correct way.  
