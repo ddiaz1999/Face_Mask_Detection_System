@@ -7,10 +7,11 @@ Developep by:
 
 ---
 ---
+<p align="center">
 
-<a href="http://unlicense.org/">
 <img src="http://ForTheBadge.com/images/badges/made-with-python.svg" alt="License: Unlicense">
-</a>
+
+</p>
 
 
 
