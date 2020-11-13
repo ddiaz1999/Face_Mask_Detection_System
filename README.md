@@ -65,7 +65,7 @@
     <strong> Model solution </strong>
 </h3>
 <p>
-    Our base model is <a href="https://arxiv.org/pdf/1801.04381.pdf"><strong><i> MobileNetV2 </i></strong></a>, after we added layers. The following is out architure:
+    Our base model is <a href="https://arxiv.org/pdf/1801.04381.pdf"><strong><i> MobileNetV2 </i></strong></a>, after we added layers. The following is our architure:
 </p>
 <p align="center">
     <img src="https://drive.google.com/uc?id=1ALPJrPRSN2MAFT9lnYl6ta7IjrogfjI2">
@@ -79,8 +79,12 @@
     <strong> Results </strong>
 </h3>
 <p>
-    Performance of model was:
+    Performance of model was (it was trained 10 epochs:
 </p>
 <p align="center">
     <img src="https://drive.google.com/uc?id=1Jl9s0_CabLbZZUYJ954xfq5KcvbiSzkY">
-</p> <br>
+</p> 
+<br>
+<p>
+    We export the model as <code><strong>.model</strong></code> to be used in others apps.
+</p>
