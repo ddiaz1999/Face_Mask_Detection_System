@@ -62,7 +62,8 @@ def mask_detect(frame, bndbox):
     if len(bndbox) >= 1:
         bndbox = np.array(bndbox)
         bndbox = bndbox[0]
-        startX, startY, endX, endY = bndbox[0][0], bndbox[0][1], bndbox[0][2], bndbox[0][3]
+        startX, startY = bndbox[0][0], bndbox[0][1]
+        endX, endY = bndbox[0][2], bndbox[0][3]
 
         face = frame[startY:endY, startX:endX]
         face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
