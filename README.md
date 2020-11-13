@@ -6,7 +6,6 @@
 <p>
     Design and implement a system to detect and classify the wearing of mask in three classes:
 </p>
-<br>
 <p align="center">
     <img src="https://drive.google.com/uc?id=1qv32VDRpnure0sSeLEDf5ugYZzYbu_y6">
 </p> 
@@ -51,6 +50,17 @@
 <br>
 
 <h3>
+    <strong> Data balance </strong>
+</h3>
+<p>
+    It's important know the data balance, to see the distribution of data, in this way we can't avoid possible overfitting, for example, if some class have more data than others the model will be trained for recognize that class.
+</p>
+<br>
+<p align="center">
+    <img src="https://drive.google.com/uc?id=1hDNa-MczwvL2vrJLw86pgzPeEcohyeRx">
+</p> <br>
+
+<h3>
     <strong> Model solution </strong>
 </h3>
 <p>
@@ -59,4 +69,14 @@
 <p align="center">
     <img src="https://drive.google.com/uc?id=1ALPJrPRSN2MAFT9lnYl6ta7IjrogfjI2">
     <img src="https://drive.google.com/uc?id=1ynTxSdnK3veuN8KM9JviGho5br9_15VW">
+</p> <br>
+
+<h3>
+    <strong> Results </strong>
+</h3>
+<p>
+    Performance of model was:
+</p>
+<p align="center">
+    <img src="https://drive.google.com/uc?id=1Jl9s0_CabLbZZUYJ954xfq5KcvbiSzkY">
 </p> <br>
