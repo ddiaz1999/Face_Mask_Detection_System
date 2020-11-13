@@ -58,7 +58,7 @@
 </p>
 <br>
 <p align="center">
-    <img src="https://drive.google.com/uc?id=1hDNa-MczwvL2vrJLw86pgzPeEcohyeRx">
+    <img src="https://user-images.githubusercontent.com/45322492/99108755-cfc47880-25b5-11eb-855d-24360e5335ac.png">
 </p> <br>
 
 <h3>
@@ -68,11 +68,11 @@
     Our base model is <a href="https://arxiv.org/pdf/1801.04381.pdf"><strong><i> MobileNetV2 </i></strong></a>, after we added layers. The following is our architure:
 </p>
 <p align="center">
-    <img src="https://drive.google.com/uc?id=1ALPJrPRSN2MAFT9lnYl6ta7IjrogfjI2">
+    <img src="https://user-images.githubusercontent.com/45322492/99108963-1914c800-25b6-11eb-905e-17755f401a92.PNG">
 </p> 
 <br>
 <p align="center">
-    <img src="https://drive.google.com/uc?id=1ynTxSdnK3veuN8KM9JviGho5br9_15VW">
+    <img src="https://user-images.githubusercontent.com/45322492/99109018-2f228880-25b6-11eb-912d-82f6975da512.PNG">
 </p> <br>
 
 <h3>
@@ -82,7 +82,7 @@
     Performance of model was (it was trained 10 epochs:
 </p>
 <p align="center">
-    <img src="https://drive.google.com/uc?id=1Jl9s0_CabLbZZUYJ954xfq5KcvbiSzkY">
+    <img src="https://user-images.githubusercontent.com/45322492/99108863-f1256480-25b5-11eb-8501-c59e59cee558.png">
 </p> 
 <br>
 <p>
