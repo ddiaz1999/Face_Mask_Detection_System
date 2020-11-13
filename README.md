@@ -6,6 +6,7 @@
 <p>
     Design and implement a system to detect and classify the wearing of mask in three classes:
 </p>
+<br>
 <p align="center">
     <img src="https://drive.google.com/uc?id=1qv32VDRpnure0sSeLEDf5ugYZzYbu_y6">
 </p> 
@@ -68,6 +69,9 @@
 </p>
 <p align="center">
     <img src="https://drive.google.com/uc?id=1ALPJrPRSN2MAFT9lnYl6ta7IjrogfjI2">
+</p> 
+<br>
+<p align="center">
     <img src="https://drive.google.com/uc?id=1ynTxSdnK3veuN8KM9JviGho5br9_15VW">
 </p> <br>
 
