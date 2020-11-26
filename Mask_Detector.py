@@ -52,18 +52,19 @@ import cv2
 #                                  MASK DETECTOR                               #
 #------------------------------------------------------------------------------#
 
-predict = []
+
 
 maskDetectionModelPath = r".\Mask_Detect\mask_detector.model"
 maskNet = load_model(maskDetectionModelPath)
 
 def mask_detect(frame, bndbox):
+    predict = []
 
     if len(bndbox) >= 1:
         bndbox = np.array(bndbox)
         bndbox = bndbox[0]
-        startX, startY = bndbox[0][0], bndbox[0][1]
-        endX, endY = bndbox[0][2], bndbox[0][3]
+        startX, startY = bndbox[0], bndbox[1]
+        endX, endY = bndbox[2], bndbox[3]
 
         face = frame[startY:endY, startX:endX]
         face = cv2.cvtColor(face, cv2.COLOR_BGR2RGB)
@@ -73,4 +74,4 @@ def mask_detect(frame, bndbox):
         face = np.array([face])
         predict = maskNet.predict(face)
 
-    return [predict]
+    return predict

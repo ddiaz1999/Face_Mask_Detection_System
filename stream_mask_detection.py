@@ -64,7 +64,7 @@ def draw_face(frame, bndbox, predict, verbose=False):
 		bndbox = np.array(bndbox)
 		bndbox = bndbox[0]
 
-		predict = predict[0][0]
+		predict = predict[0]
 		index = np.where(predict == np.max(predict))[0][0]
 
 		if verbose == True:
@@ -73,8 +73,8 @@ def draw_face(frame, bndbox, predict, verbose=False):
 		class_predict = classes[index]
 		color = classes_color[class_predict]
 
-		startX, startY = bndbox[0][0], bndbox[0][1]
-		endX, endY = bndbox[0][2], bndbox[0][3]
+		startX, startY = bndbox[0], bndbox[1]
+		endX, endY = bndbox[2], bndbox[3]
 		start_point, end_point = (startX, startY), (endX, endY)
 
 		FONT, FONT_SCALE, thickness = cv2.FONT_HERSHEY_DUPLEX, 1.3, 2
@@ -103,7 +103,7 @@ if __name__ == "__main__":
 			         'without_mask': (0, 0, 255)}
 
 	vid = cv2.VideoCapture(0)
-
+	predict = []
 	while (True):
 
 		ret, frame = vid.read()
